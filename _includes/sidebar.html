@@ -1,0 +1,9 @@
+<div class="sidebar">
+    <h1 class="site-header"><a href="{{ '/' | absolute_url }}">{{ site.title }}</a></h1>
+    {% assign author = site.github_username -%}
+    <a href="{{ author | prepend: 'https://github.com/' }}" target="_blank" ><h1>{{ author }}</h1></a>
+    <h4>{{ site.description }}</h4><br>
+    <h2><a href="{{ '/about.html' | absolute_url }}">About</a></h2>
+    <h2><a href="{{ '/blog/' | absolute_url }}">Blogs</a></h2>
+    <h2><a href="{{ '/feed.xml' | absolute_url }}" target="_blank" >Rss feed</a></h2>
+</div>

@@ -1,0 +1,8 @@
+- name: github
+  url: https://github.com/
+- name: itch-io
+  url: https://itch.io/
+- name: youtube
+  url: https://www.youtube.com/
+- name: patreon
+  url: https://www.patreon.com/

@@ -1,0 +1,7 @@
+<div class="social-media">
+    <ul>
+        {% for link in site.data.social_media %}
+        <li><a href="{{ link.url | absolute_url }}" target="_blank" >{{ link.name }}</a></li>
+        {% endfor -%}
+    </ul>
+</div>

@@ -1,0 +1,36 @@
+title: Atlas Jekyll Theme
+description: A jekyll theme for personal website.
+email: yourusername@gmail.com
+baseurl: # the subpath of your site, e.g. /blog
+
+url: # the base hostname & protocol for your site
+permalink: /:slug
+
+twitter_username: jekyllrb
+github_username:  Jekyll
+
+markdown: kramdown
+page_excerpts: true
+
+favicon: "/img/atlas.png"
+
+collections:
+  posts:
+    permalink: "/blog/:title:output_ext"
+    output: true
+
+defaults:
+- scope:
+    path: _posts
+    type: posts
+- scope:
+    path: ''
+  values:
+    image: "/img/preview.png"
+
+plugins:
+- jekyll-feed
+- jekyll-paginate
+
+paginate: 5
+paginate_path: "/blog/page-:num/"
